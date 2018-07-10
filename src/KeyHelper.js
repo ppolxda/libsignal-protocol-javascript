@@ -3,8 +3,8 @@ function isNonNegativeInteger(n) {
 }
 
 var KeyHelper = {
-    generateIdentityKeyPair: function() {
-        return Internal.crypto.createKeyPair();
+    generateIdentityKeyPair: function(privKey) {
+        return Internal.crypto.createKeyPair(privKey);
     },
 
     generateRegistrationId: function() {
